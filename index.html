@@ -1,64 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-
-    <style>
-        body {
-            background-color: #FFF4EC;
-            text-align: center;
-            font-size: 18px;
-            font-family: Arial, Helvetica, sans-serif;
-            overflow-y: hidden; overflow-x: hidden;
-        }
-
-        #main {
-            background-color: #E7CFBC;
-            border-radius: 10px;
-            padding: 5px;
-        }
-
-        ul {
-            line-height: 30px;
-        }
-
-        .links a {
-            margin-left: 15px;
-            text-decoration: none;
-        }
-
-        #texto_principal{
-            margin: 5px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <title>Portfolio</title>
 </head>
-
 <body>
-    <h1>Igor Infingardi de Carvalho Ribeiro</h1>
-    <div id="main">
-        <img src="Foto_perfil.jpg" alt="Imagem de perfil" width="200px">
-        <br>
+    <header>
+        <div class="container">
+            <nav class="nav-socials">
+                <a href="https://github.com/infingardi" class="link-socials"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/igor-infingardi/" class="link-socials"><i class="fab fa-linkedin"></i></a>
+            </nav>
 
-        <div class="links">
-            <a href="https://github.com/infingardi" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/igor-infingardi-500239221/" target="_blank">Linkedin</a>
+            <nav class="nav-shortcut">
+                <button>ABOUT</button>
+                <button>PROJECTS</button>
+                <button>CONTATO</button>
+            </nav>
         </div>
+    </header>
 
-        <p id="texto_principal">Me chamo Igor, atualmente curso Ciência da Computação na UFJF (Universidade Federal de Juiz de Fora - MG), e
-            estou aprendendo desenvolvimento web na Trybe</p>
+    <section class="container-apresentation">
+        <section class="container-img-text">
+            <img src="./images/foto-perfil.jpeg" alt="imagem de perfil">
+            <section class="container-text">
+                <p>Olá, meu nome é</p>
+                <h1>Igor Infingardi</h1>
+                <p>Atualmente curso Ciência da Computação na UFJF (Universidade Federal de Juiz de Fora - MG),
+                    e estou aprendendo desenvolvimento full-stack na Trybe.
+                </p>
+                <button> <a href="https://www.linkedin.com/in/igor-infingardi/">Fale comigo!</a></button>
+            </section>
+        </section>
+    </section>
 
-        <h2>Habilidades: </h2>
-        <ul>
-            <li>Git</li>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-    </div>
+    <main>
+        <section class="container-about-me">
+            <h2>Habilidades</h2>
+            <p>Tenho um bom compreendimento de lógica de programação, e estou aprendendo desenvolvimento full-stack,
+                porém tenho o interesse de aprender mais sobre outras áreas ligada a programação e tecnologia como cibersegurança, devops e ciência de dados.
+            </p>
+        </section>
 
+        <section class="container-skills">
+            <section class="sec-skill">
+                <i class="fas fa-cubes icon"></i>
+                <h3>Fundamentos</h3>
+                <ul>
+                    <li>Jest</li>
+                    <li>Git</li>
+					<li>Kanban</li>
+                    <li>Scrum</li>
+                </ul>
+            </section>
+
+            <section class="sec-skill">
+                <i class="fas fa-laptop-code icon"></i>
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                </ul>
+            </section>
+
+            <section class="sec-skill">
+                <i class="fas fa-database icon"></i>
+                <h3>Backend</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Banco de dados</li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="container-projects">
+            <h2>Projetos em Destaque</h2>
+            
+            <section class="sec-projects">
+                <section class="project" >
+                    <div class="project-image">
+                        <img src="./images/project-frontend-online-store.png">
+                        <div class="project-description">
+                            <h3>Trybe</h3>
+                            <p class="project-name"><a href="">Projeto: Frontend Online Store</a></p>
+                            <p class="project-description-text">Este projeto foi desenvolvido em grupo, e para organizar da melhor forma foi escolhida a metodoliga do kanban. </p>
+                        </div>   
+                    </div>
+                    <section class="project-skills">
+                        <h3>Web Online Store</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Javascript</li>
+                            <li>Kanban</li>
+                        </ul>
+                    </section>
+                </section>
+               
+            </section>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Email para contato: infingardidev@gmail.com</p>
+    </footer>
+    
 </body>
-
 </html>
