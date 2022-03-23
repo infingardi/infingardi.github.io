@@ -70,27 +70,6 @@ header .container {
     background-color: #085A9E;
 }
 
-.nav-shortcut {
-    width: 90%;
-    max-width: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav-shortcut button{
-    background-color: #0A71C6;
-    border: none;
-    color: #C1C9E0;
-    font-size: 18px;
-    transition: color 0.5s;
-}
-
-.nav-shortcut button:hover {
-    cursor: pointer;
-    color: white;
-}
-
 .container-apresentation {
     background-color: #41A4F5;
 }
